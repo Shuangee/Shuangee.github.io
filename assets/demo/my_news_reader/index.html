@@ -75,6 +75,8 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/talk">留言</a></li>
 	        
+				<li><a href="/archives">归档</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -95,11 +97,7 @@ var _hmt = _hmt || [];
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="/" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+					<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1453514518&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 		        
 					<a class="mail" target="_blank" href="/1453514518@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -133,16 +131,14 @@ var _hmt = _hmt || [];
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="/" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1453514518&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="mail" target="_blank" href="/1453514518@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -153,11 +149,13 @@ var _hmt = _hmt || [];
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
+					<li style="width: 25%"><a href="/photos">相册</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/talk">留言</a></li>
+					<li style="width: 25%"><a href="/talk">留言</a></li>
+		        
+					<li style="width: 25%"><a href="/archives">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -273,7 +271,7 @@ position: absolute;
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/assets/demo/my_news_reader/" alt="微信分享二维码">
+      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=http://yoursite.com/assets/demo/my_news_reader/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -317,6 +315,33 @@ position: absolute;
 
 
 
+
+
+<section id="comments" class="comments">
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "ttXySKQ2IKjQzyyUeXtx000w-gzGzoHsz",
+            app_key: "c8T7v4vB8iz71Jzhq6k2NXJ9",
+            placeholder: "说什么好呢",
+            avatar:"mm"
+        });
+    }
+</script>
+
+
   
 
   
@@ -330,6 +355,8 @@ position: absolute;
   
 
 
+
+  </section>
 
 
 
